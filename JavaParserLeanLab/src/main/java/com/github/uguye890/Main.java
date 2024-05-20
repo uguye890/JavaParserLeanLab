@@ -19,13 +19,13 @@ public class Main {
 			System.exit(1);
 		}
 		
-		Path inputPath = Paths.get(args[0]);
-		if ( !Files.exists(inputPath) || !Files.isReadable(inputPath) ) {
+		Path targetPath = Paths.get(args[0]);
+		if ( !Files.exists(targetPath) || !Files.isReadable(targetPath) ) {
 			printError("Please specified a valid path");
 		}
 		
 		try {
-			CompilationUnit cu = StaticJavaParser.parse(inputPath);
+			CompilationUnit cu = StaticJavaParser.parse(targetPath);
 //            String formattedAST = cu.toString();
 //            System.out.println(formattedAST);
             printAST(cu, 0);
