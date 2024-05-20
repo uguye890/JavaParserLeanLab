@@ -7,47 +7,47 @@ package test;
  *
  */
 public class HelloWorld {
-	private final static String message = "Hello World!"; 
+	private final static String messageHello = "Hello World!"; 
 	
 	/*
 	 * BlockComment
 	 */
 	public HelloWorld() {
-		System.out.println(message);
+		System.out.println(messageHello);
 	}
 	
 	// LineComment
 	public static void printHelloWorlds(int aCount) {
 		for (int i = 0; i < aCount; i++) {
-			System.out.println(message);
+			System.out.println(messageHello);
 		}
-		int count = 0;
-		while (count < aCount) {
-			System.out.println(message);
-			count++;
+		int cnt = 0;
+		while (cnt < aCount) {
+			System.out.println(messageHello);
+			cnt++;
 		}
 	}
 	
-	public static void printConditionalHelloWorld(int value) {
-		if (value < 0) {
-			System.out.println("Negative value : " + message);
+	public static void printConditionalHelloWorld(int aValue) {
+		if (aValue < 0) {
+			System.out.println("Negative value : " + messageHello);
 		}
-		else if (value == 0) {
-			System.out.println("Zero value : " + message);
+		else if (aValue == 0) {
+			System.out.println("Zero value : " + messageHello);
 		}
 		else {
-			System.out.println("Positive value : " + message);
+			System.out.println("Positive value : " + messageHello);
 		}
 		
-		switch (value) {
+		switch (aValue) {
 			case 0:
-				System.out.println("Zero value : " + message);
+				System.out.println("Zero value : " + messageHello);
 				break;
 			case 1:
-				System.out.println("One value : " + message);
+				System.out.println("One value : " + messageHello);
 				break;
 			default:
-				System.out.println("Value is not binary : " + message);
+				System.out.println("Value is not binary : " + messageHello);
 				break;
 		}
 	}
