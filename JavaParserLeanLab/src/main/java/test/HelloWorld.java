@@ -26,6 +26,10 @@ public class HelloWorld {
 			System.out.println(messageHello);
 			cnt++;
 		}
+		do {
+			System.out.println(messageHello);
+			cnt++;
+		} while(cnt < aCount);
 	}
 	
 	public static void printConditionalHelloWorld(int aValue) {
